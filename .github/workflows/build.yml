@@ -56,7 +56,9 @@ jobs:
         make
 
     - name: Upload urunc_arm64 to S3
-      if: matrix.archconfig == 'arm64'
+      # FIXME: refactor binary upload logic
+      if: false
+      #if: matrix.archconfig == 'arm64'
       uses: cloudkernels/minio-upload@v3
       with:
         url: https://s3.nbfc.io
@@ -67,7 +69,9 @@ jobs:
         policy: 1
 
     - name: Upload urunc_amd64 to S3
-      if: matrix.archconfig == 'amd64'
+      # FIXME: refactor binary upload logic
+      if: false
+      #if: matrix.archconfig == 'amd64'
       uses: cloudkernels/minio-upload@v3
       with:
         url: https://s3.nbfc.io
@@ -78,7 +82,9 @@ jobs:
         policy: 1
 
     - name: Upload containerd-shim-urunc-v2_arm64 to S3
-      if: matrix.archconfig == 'arm64'
+      # FIXME: refactor binary upload logic
+      if: false
+      #if: matrix.archconfig == 'arm64'
       uses: cloudkernels/minio-upload@v3
       with:
         url: https://s3.nbfc.io
@@ -89,7 +95,9 @@ jobs:
         policy: 1
 
     - name: Upload containerd-shim-urunc-v2_amd64 to S3
-      if: matrix.archconfig == 'amd64'
+      # FIXME: refactor binary upload logic
+      if: false
+      #if: matrix.archconfig == 'amd64'
       uses: cloudkernels/minio-upload@v3
       with:
         url: https://s3.nbfc.io

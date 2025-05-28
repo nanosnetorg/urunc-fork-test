@@ -1,15 +1,16 @@
 name: 🍜 Build/publish urunc-deploy
 
 on:
-  pull_request:
-    branches: ["main"]
-    paths:
-    - 'deployment/urunc-deploy/Dockerfile'
-    - 'deployment/urunc-deploy/scripts/install.sh'
-    - 'cmd'
-    - 'pkg'
-    - 'internal'
-    - 'Makefile'
+  # FIXME: refactor to account for external PRs
+  #pull_request:
+  #  branches: ["main"]
+  #  paths:
+  #  - 'deployment/urunc-deploy/Dockerfile'
+  #  - 'deployment/urunc-deploy/scripts/install.sh'
+  #  - 'cmd'
+  #  - 'pkg'
+  #  - 'internal'
+  #  - 'Makefile'
   push:
     branches: ["main"]
     paths:
