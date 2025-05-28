@@ -45,6 +45,8 @@ const (
 	annotBlock         = "com.urunc.unikernel.block"
 	annotBlockMntPoint = "com.urunc.unikernel.blkMntPoint"
 	annotUseDMBlock    = "com.urunc.unikernel.useDMBlock"
+	annotUsDDMBlock    = "com.urunc.unikernel.usDDMBlock"
+
 )
 
 // A UnikernelConfig struct holds the info provided by bima image on how to execute our unikernel
