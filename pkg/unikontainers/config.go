@@ -36,15 +36,17 @@ var ErrEmptyAnnotations = errors.New("spec annotations are empty")
 // Urunc specific annotations
 // ALways keep it in sync with the struct UnikernelConfig struct
 const (
-	annotType          = "com.urunc.unikernel.unikernelType"
-	annotVersion       = "com.urunc.unikernel.unikernelVersion"
-	annotBinary        = "com.urunc.unikernel.binary"
-	annotCmdLine       = "com.urunc.unikernel.cmdline"
-	annotHypervisor    = "com.urunc.unikernel.hypervisor"
-	annotInitrd        = "com.urunc.unikernel.initrd"
-	annotBlock         = "com.urunc.unikernel.block"
-	annotBlockMntPoint = "com.urunc.unikernel.blkMntPoint"
-	annotUseDMBlock    = "com.urunc.unikernel.useDMBlock"
+	annotType           = "com.urunc.unikernel.unikernelType"
+	annotVersion        = "com.urunc.unikernel.unikernelVersion"
+	annotBinary         = "com.urunc.unikernel.binary"
+	annotCmdLine        = "com.urunc.unikernel.cmdline"
+	annotHypervisor     = "com.urunc.unikernel.hypervisor"
+	annotInitrd         = "com.urunc.unikernel.initrd"
+	annotBlock          = "com.urunc.unikernel.block"
+	annotBlockMntPoint  = "com.urunc.unikernel.blkMntPoint"
+	annotUseDMBlock     = "com.urunc.unikernel.useDMBlock"
+	annotUseDMBBlock    = "com.urunc.unikernel.useDMBBlock"
+
 )
 
 // A UnikernelConfig struct holds the info provided by bima image on how to execute our unikernel
