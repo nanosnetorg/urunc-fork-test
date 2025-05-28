@@ -20,6 +20,11 @@ jobs:
         if: ${{ github.event.pull_request.rebaseable != null && github.event.pull_request.rebaseable == false }}
         run: exit 1
 
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Append git trailers
         uses: nubificus/git-trailers@feat_use_rebase
         with:
